@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="slide.css">
+		<script type="text/javascript" src="slide.js"></script>
+	</head>
+
+<body>
+
+	<header>
+		<h1>Slide builder</h1>
+
+		<div id="slideBuilder">
+			<input type="text" name="text" id="inUrl" placeholder="url" value="https://itstep.dp.ua/wp-content/uploads/2016/05/image.jpg">
+			<input type="text" name="text" id="inText" placeholder="text" value="Some Text">
+			<input type="button" name="" value="+" onclick="addSlide();">
+			<input type="number" name="text" id="inSec" placeholder="seconds" value="Seconds">
+			<input type="button" name="" value="<<" onclick="doPrev();">
+			<input type="button" name="" value=">>" onclick="doLoop();">
+
+		</div>
+
+	</header>
+
+
+
+	<div id="content">
+
+		<div id="slideBody">
+			<ul id="slideContent">
+				<li style="background-image: url('https://itstep.dp.ua/wp-content/uploads/2016/05/image.jpg'); visibility: visible;">
+					<a class="btnDel">X</a>
+					<h1 class="slideHeader">First</h1>
+				</li>
+				<li style="background-image: url('https://itstep.dp.ua/wp-content/uploads/2016/05/banner_7-1.jpg'); visibility: visible;">
+					<a class="btnDel">X</a>
+					<h1 class="slideHeader">Middle</h1>
+				</li>
+				<li style="background-image: url('https://itstep.dp.ua/wp-content/uploads/2016/05/banner_1.jpg'); visibility: hidden;">
+					<a class="btnDel">X</a>
+					<h1 class="slideHeader">Last</h1>
+				</li>
+			</ul>
+
+			<span id="btnPrev" class="btnNav" onclick="doPrev();"> << </span>
+			<span id="btnNext" class="btnNav" onclick="doNext();"> >> </span>		
+		</div>
+
+	</div>
+
+	<footer>
+	</footer>
+
+
+</body>
+
+</html>
